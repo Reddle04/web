@@ -17,6 +17,7 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 2.5rem;
     text-align: center;
+    word-spacing: 5px;
     margin-bottom: 1rem;
 }
 
@@ -144,6 +145,7 @@ h4 {
     font-size: 1.5rem;
     margin-bottom: 8px;
     color: aliceblue;
+    text-decoration: underline;
 }
 
 .contact ol {
