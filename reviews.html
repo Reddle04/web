@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="кошка, кот, котик, магазин, купить котика">
     <meta name="description" content="Интернет-магазин котиков. У нас вы найдете самых милых пушистых друзей!">
-    <title>Магазин котиков</title>
+    <title>Отзывы</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
+    <script src="js/reviews.js" defer></script>
 </head>
 
 <body>
@@ -24,13 +25,20 @@
 </header>
 
 <main class="main">
-    <section id="contact" class="contact">
-        <h3 class="contact__title">Наши контакты</h3>
-        <p>Свяжитесь с нами для покупки котиков!</p>
-        <ol style="list-style-type: circle;">
-            <li>Телефон: +7 (800) 555-35-35</li>
-            <li>Email: <a href="mailto:info@catshop.com">info@catshop.com</a></li>
-        </ol>
+    <section id="add-review" class="review-form">
+        <h2>Оставьте отзыв</h2>
+        <form id="reviewForm" class="review-form">
+          <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" required placeholder="Напишите отзыв"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section id="reviews" class="reviews-list">
+        <h2>Отзывы покупателей</h2>
+        <div id="reviewsContainer" class="reviews-container"></div>
     </section>
 </main>
 
