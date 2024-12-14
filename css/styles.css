@@ -55,6 +55,15 @@ h4 {
     border-radius: 5px;
 }
 
+.header__list li a.active {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.header__list li a:hover {
+    color: aliceblue;
+}
+
 .main {
     padding: 20px;
     display: flex;
@@ -71,6 +80,15 @@ h4 {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.about__image {
+    display: block;
+    margin: 20px auto;
+    max-width: calc(70% - 20px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .catalog__list {
@@ -144,7 +162,7 @@ h4 {
 .contact__title {
     font-size: 1.5rem;
     margin-bottom: 8px;
-    color: aliceblue;
+    color: #34495e;
     text-decoration: underline;
 }
 
@@ -158,12 +176,15 @@ h4 {
 }
 
 .footer {
-    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
     padding: 5px;
     background-color: #34495e;
     color: aliceblue;
     font-size: 0.8rem;
-    width: 100%;
 }
 
 .footer a {
