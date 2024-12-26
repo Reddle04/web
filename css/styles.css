@@ -8,6 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -91,37 +92,38 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    justify-content: center;
-}
-
 .catalog__item {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
     background-color: #fff;
-    flex: 1 1 calc(20% - 20px);
-    max-width: calc(20% - 20px);
-    min-width: 200px;
 }
 
 .catalog__item img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 50%;
 }
 
 .catalog__item h4 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: purple;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    justify-content: center;
+    align-items: center;
 }
 
 .schedule__header {
@@ -226,6 +228,20 @@ h4 {
     margin-bottom: 15px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+.preloader {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+}
+
+.error-message {
+    color: darkred;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .footer {
